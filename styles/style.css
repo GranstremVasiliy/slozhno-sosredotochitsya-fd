@@ -186,12 +186,12 @@
 
 .footer {
   position: relative;
-  min-height: 667px;
-  block-size: 100vh;
+  min-height: 668px;
   display: grid;
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-block-end: -60px;
 }
 
 .footer__title {

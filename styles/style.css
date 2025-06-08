@@ -7,7 +7,12 @@
   font-family: var(--main-font-family);
   display: flex;
   flex-direction: column;
-  gap: var(--section-gap, 30px);
+  
+}
+
+.header,
+.content {
+  margin-block-end: 30px;
 }
 
 .header,
@@ -186,12 +191,12 @@
 
 .footer {
   position: relative;
+  block-size: 100vh;
   min-height: 668px;
   display: grid;
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-block-end: -60px;
 }
 
 .footer__title {

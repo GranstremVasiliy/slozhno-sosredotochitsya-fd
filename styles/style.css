@@ -90,7 +90,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--button-color);
+  outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button {
@@ -143,11 +143,10 @@
 .section__subtitle {
   font-size: var(--main-font-size, 18px);
   font-weight: var(--font-weight-bold, 700);
-  color: var(--accent-color, #ff0070);
+  color: var(--subtitle-color, #ff0070);
 }
-
+ 
 .text-link {
-  text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
@@ -174,9 +173,15 @@
   font-size: var(--main-font-size);
 }
 
-.advice-section .article-block__heading:not(:first-of-type) {
-  margin-block-start: 10px;
+.article-block h4 {
   font-weight: var(--font-weight-normal, 400);
+  margin-block-start: 10px;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .gallery {
@@ -230,7 +235,7 @@
     margin-block-start: 10px;
   }
 
-  .two-column-section {
+  .thezis-section {
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
@@ -302,7 +307,7 @@
     max-width: 491px;
   }
 
-  .two-column-section {
+  .thezis-section {
     grid-template-columns: 315px 1fr;
   }
 

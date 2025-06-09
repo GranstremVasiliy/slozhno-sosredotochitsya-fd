@@ -4,6 +4,7 @@
   --accent-color: #ff8dcb;
   --main-title-font-color: #ffc2e6;
   --main-font-color: #353430;
+  --subtitle-color: #353430;
   --button-color: #353430;
   --button-outline-color-hover: #32312d66;
 }
@@ -12,9 +13,6 @@
   display: none;
 }
 
-.theme-light .section__subtitle {
-  color: var(--main-font-color);
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -23,6 +21,7 @@
     --accent-color: #ff8dcb;
     --main-title-font-color: #ffc2e6;
     --main-font-color: #353430;
+    --subtitle-color: #353430;
     --button-color: #353430;
     --button-outline-color-hover: #32312d66;
   }
@@ -31,7 +30,4 @@
     display: none;
   }
 
-  .section__subtitle {
-    color: var(--main-font-color);
-  }
 }

@@ -166,8 +166,6 @@
   flex-wrap: wrap;
 }
 
-.section__article-list
-
 .article-block {
   display: flex;
   flex-direction: column;

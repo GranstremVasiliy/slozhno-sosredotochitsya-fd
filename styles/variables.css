@@ -8,8 +8,10 @@
   --section-gap: 30px;
   --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-titile-font-color: #db00ff;
+  --corner-color: #ff0070;
   --accent-color: #ff0070;
   --subtitle-color: #ff0070;
+  --title-decor-color: #000028;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --button-color: #ff0070;

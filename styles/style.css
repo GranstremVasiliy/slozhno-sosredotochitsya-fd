@@ -4,7 +4,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font-family, "IBM Plex mono"), monospace, sans-serif;
   display: flex;
   flex-direction: column;
   
@@ -39,8 +39,8 @@
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  border-block-start: 1px solid var(--accent-color, #ff0070);
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--corner-color);
+  border-inline-end: 1px solid var(--corner-color);
   inset-inline-end: var(--main-padding);
   inset-block-start: var(--main-padding);
 }
@@ -50,8 +50,8 @@
   display: block;
   block-size: 25px;
   inline-size: 25px;
-  border-block-end: 1px solid var(--accent-color, #ff0070);
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--corner-color);
+  border-inline-start: 1px solid var(--corner-color);
   position: absolute;
   inset-inline-start: var(--main-padding);
   inset-block-end: var(--main-padding);
@@ -123,7 +123,7 @@
 
 .title-decor {
   background-color: var(--accent-color, #ff0070);
-  color: var(--acent-font-color, #000028);
+  color: var(--title-decor-color);
   font-size: var(--main-font-size, 18px);
   font-weight: var(--font-weight-bold, 700);
   line-height: var(--main-line-height, 1.3);
@@ -161,9 +161,12 @@
 
 .section__article-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 20px;
+  flex-wrap: wrap;
 }
+
+.section__article-list
 
 .article-block {
   display: flex;
@@ -311,17 +314,14 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .reasons-section {
-    grid-template-columns: repeat(auto-fit, 1fr);
-  }
-
   .reasons-section .section__article-list {
     flex-direction: row;
     gap: 20px;
   }
 
   .reasons-section-block {
-    flex: 1 1 315px;
+    flex: 1 1 314px;
+    max-width: 315px;
   }
 
   .footer {

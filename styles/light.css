@@ -15,7 +15,6 @@
   display: none;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
@@ -31,5 +30,4 @@
   .header__decor {
     display: none;
   }
-
 }

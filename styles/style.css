@@ -161,6 +161,7 @@
 .section__article-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }

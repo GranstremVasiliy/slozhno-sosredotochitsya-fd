@@ -5,6 +5,7 @@
   --main-title-font-color: #db00ff;
   --main-font-color: #f1b2ce;
   --button-color: #ff0070;
+  --corner-color: var(--accent-color, #ff0070);
   --subtitle-color: var(--accent-color, #ff0070);
   --button-outline-color-hover: #ff007066;
 }
